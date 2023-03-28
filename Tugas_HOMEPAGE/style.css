@@ -13,7 +13,7 @@ body {
 .navbar{
     /* background-color: white; */
     background-color:#6d6d6d;
-    position: inherit;
+    position: fixed;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -62,7 +62,7 @@ body {
     border-radius: 8px;
 }
 
-.hero-wrapper {
+/* .hero-wrapper {
     background-image: url('/images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -74,7 +74,7 @@ body {
     text-align: center;
     flex-direction: column;
     color: white;
-}
+} */
 
 .slide_show * {
   z-index: 9;
@@ -106,11 +106,12 @@ body {
   display: cover;
   position: absolute;
   top: 10vh;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
+  margin-bottom: 0px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.557);
+  background-color: rgba(red, green, blue, alpha);
 }
 
 .section-activity {
