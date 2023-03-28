@@ -7,8 +7,68 @@
 
 body {
     overflow-x: hidden;
+    background-color: gainsboro;
 }
 
+.navbar{
+    /* background-color: white; */
+    background-color:#6d6d6d;
+    position: inherit;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-start;
+}
+
+.container-navbar{
+    width: 100%;
+}
+
+/* .search-bar{
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border-radius: 7.5px;
+    border-style: solid;
+    border: 2px solid powderblue;
+    margin-right: 2px;
+} */
+
+.container-navbar img{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-color: #6d6d6d;
+}
+
+.ul-navbar{
+    margin-left: 450px;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.li-navbar{
+    padding: 15px;
+    margin: 5px;
+}
+
+.li-navbar:hover{
+    background-color: gray;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+/* NAVBAR TEXT */
+.a-navbar{
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    color: goldenrod;
+    text-decoration: none;
+}
 .hero-wrapper {
     background-image: url('/images/hero.jpg');
     background-size: cover;
@@ -61,20 +121,20 @@ body {
     background-color: rgba(0, 0, 0, 0.557);
 }
 
-.section-activity {
+.section-film-list {
     margin-top: 150px;
     text-align: center;
     padding: 0 10em;
     margin-bottom: 150px;
 }
 
-.section-activity h2 {
+.section-film-list h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
 }
 
-.activity-wrapper {
+.film-list-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3em;
@@ -82,7 +142,7 @@ body {
 
 
 
-.activity {
+.film-list {
     /* background-color: #6d6d6d; */
     /* display: grid; */
     /* grid-template-columns: 1fr; */
@@ -90,24 +150,24 @@ body {
     height: 100%;
 }
 
-.activity .activity-image {
+.film-list .film-list-image {
     width: 100%;
     height: auto;
     overflow: hidden;
     margin-bottom: 10px;
 }
 
-.activity img {
+.film-list img {
     border-radius: 8px;
     width: 100%;
 }
 
-.activity .description {
+.film-list .description {
     width: 100%;
     text-align: justify;
 }
 
-.activity .description h3 {
+.film-list .description h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -124,56 +184,3 @@ footer {
     background-color: gray;
 } */
 
-.navbar{
-    /* background-color: white; */
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    justify-items: flex-start;
-}
-
-/* .search-bar{
-    width: 200px;
-    height: 25px;
-    background-color: white;
-    border-radius: 7.5px;
-    border-style: solid;
-    border: 2px solid powderblue;
-    margin-right: 2px;
-} */
-
-.container-navbar img{
-    width: 5%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-color: transparent;
-}
-
-.ul-navbar{
-    margin-left: 450px;
-    align-items: center;
-    display: flex;
-    list-style-type: none;
-}
-
-.li-navbar{
-    padding: 15px;
-    margin: 5px;
-}
-
-.li-navbar:hover{
-    background-color: red;
-    transition: .2s ease-in-out;
-    transition-delay: .1s;
-    border-radius: 8px;
-}
-
-/* NAVBAR TEXT */
-.a-navbar{
-    font-family: 'Golos Text', sans-serif;
-    font-size: 20px;
-    color: goldenrod;
-    text-decoration: none;
-}
