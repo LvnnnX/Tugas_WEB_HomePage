@@ -101,23 +101,23 @@
     </section>
     <footer>copyright &copy;kelompok 1</footer>
     <script>
-      var i = 0;
-      var images = [];
-      var slideTime = 3000; // 3 seconds
+        var i = 0;
+        var images = [];
+        var slideTime = 3000; // 3 seconds
 
-      images[0] = "/images/image1.jpg";
-      images[1] = "/images/image2.jpg";
-      images[2] = "/images/image3.jpg";
+        images[0] = "/images/image1.jpg";
+        images[1] = "/images/image2.jpg";
+        images[2] = "/images/image3.jpg";
 
-      function changePicture() {
-        let bg = document.getElementById('sleding');
-        bg.style.backgroundImage = "url(" + images[i] + ")";
+        function changePicture() {
+            let bg = document.getElementById('sleding');
+            bg.style.backgroundImage = "url(" + images[i] + ")";
 
-        if (i < images.length - 1) {
-          i++;
-        } else {
-          i = 0;
-        }
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
     </script>
 </body>
 
