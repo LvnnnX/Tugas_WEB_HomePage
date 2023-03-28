@@ -1,0 +1,109 @@
+.hero-wrapper {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-wrapper *{
+    z-index: 9;
+}
+
+.hero-wrapper h1 {
+    font-size: 3.5em;
+    /* margin-bottom: 0.5rem; */
+}
+
+.hero-wrapper a {
+    margin-top: 2rem;
+    ;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: #FCA120;
+    border: 1px #FCA120 solid;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5 ease-in-out;
+}
+
+.hero-wrapper a:hover {
+    background-color: #f9970f;
+}
+
+.hero-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.557);
+}
+
+.section-activity {
+    margin-top: 150px;
+    text-align: center;
+    padding: 0 10em;
+    margin-bottom: 150px;
+}
+
+.section-activity h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.activity-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em;
+}
+
+
+
+.activity {
+    /* background-color: #6d6d6d; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    height: 100%;
+}
+
+.activity .activity-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.activity img {
+    width: 100%;
+}
+
+.activity .description {
+    width: 100%;
+    text-align: justify;
+}
+
+.activity .description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #6d6d6d;
+    padding: 16px 32px;
+    text-align: center;
+    color: white;
+}
