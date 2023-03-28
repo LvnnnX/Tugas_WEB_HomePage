@@ -37,13 +37,9 @@
             </ul>
         </div>
     </section>
-    <section class="slide_show">
-        <!-- <h1>PESAN Tiket</h1> -->
-        <div>
-            <img class="slide-show-images" src="/images/image1.jpg" style="width:100%">
-            <img class="slide-show-images" src="/images/image2.jpg" style="width:100%">
-            <img class="slide-show-images" src="/images/image3.jpg" style="width:100%">
-            <!-- <p>Pesan Ticket Tanpa Karcis</p> -->
+    <section class="slide_show" id="sleding">
+        <h1>PESAN Tiket</h1>
+        <p>Pesan Ticket Tanpa Karcis</p>
         </div>
     </section>
     <section class="section-activity">
@@ -100,22 +96,27 @@
     </section>
     <footer>copyright &copy;kelompok 1</footer>
     <script>
-        var myIndex = 0;
-        carousel();
+      var i = 0;
+      var images = [];
+      var slideTime = 3000; // 3 seconds
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slide-show-images");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2500);
+      images[0] = "/images/image1.jpg";
+      images[1] = "/images/image2.jpg";
+      images[2] = "/images/image3.jpg";
+
+      function changePicture() {
+        let bg = document.getElementById('sleding');
+        bg.style.backgroundImage = "url(" + images[i] + ")";
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
         }
+        setTimeout(changePicture, slideTime);
+      }
+
+      window.onload = changePicture;
     </script>
     </script>
 </body>
