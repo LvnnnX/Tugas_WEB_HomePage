@@ -38,7 +38,7 @@
         </div>
     </section>
     <section class="slide_show">
-        <a href="#" class="slide-show-btn">Beli Tiket</a>
+        <a href="#" class="slide-show-btn">BELI TIKET</a>
         <!-- <div class="slide-text">BELI TIKET</div> -->
         <div class="slide-show-wrapper">
             <img class="slide-show-images" src="/images/image1.jpg" style="width:100%">
@@ -101,23 +101,22 @@
     </section>
     <footer>copyright &copy;kelompok 1</footer>
     <script>
-        var i = 0;
-        var images = [];
-        var slideTime = 3000; // 3 seconds
+        var myIndex = 0;
+        carousel();
 
-        images[0] = "/images/image1.jpg";
-        images[1] = "/images/image2.jpg";
-        images[2] = "/images/image3.jpg";
-
-        function changePicture() {
-            let bg = document.getElementById('sleding');
-            bg.style.backgroundImage = "url(" + images[i] + ")";
-
-            if (i < images.length - 1) {
-                i++;
-            } else {
-                i = 0;
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide-show-images");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
     </script>
 </body>
 
